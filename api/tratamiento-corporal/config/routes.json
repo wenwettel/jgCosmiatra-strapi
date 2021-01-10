@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tratamiento-corporals",
+      "handler": "tratamiento-corporal.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tratamiento-corporals/count",
+      "handler": "tratamiento-corporal.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tratamiento-corporals/:id",
+      "handler": "tratamiento-corporal.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tratamiento-corporals",
+      "handler": "tratamiento-corporal.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tratamiento-corporals/:id",
+      "handler": "tratamiento-corporal.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tratamiento-corporals/:id",
+      "handler": "tratamiento-corporal.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tratamiento_corporals",
+  "info": {
+    "name": "tratamiento corporal",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "zonas": {
+      "type": "text"
+    },
+    "caracteristicas": {
+      "type": "richtext"
+    },
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "contraindicaciones": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
